@@ -48,4 +48,6 @@ cors_proxy.createServer({
   },
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
-});
+}).on('proxyRes', function (proxyRes, req, res) {
+  res.setHeader('X-Instance-ID', instanceId);
+});;
