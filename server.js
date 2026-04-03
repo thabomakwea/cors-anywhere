@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 // var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = ['https://www.radiotub.com', 'https://radiotub.com', 'https://radiotub.menanco.com', 'http://localhost:3000', 'http://192.168.0.115:3000', 'http://192.168.11.126:3000'];
+var originWhitelist = ['https://www.radiotub.com', 'https://radiotub.com', 'https://radiotub.menanco.com', 'http://localhost:3000', 'http://192.168.0.115:3000', 'http://192.168.11.126:3000', 'http://192.168.10.60:3000'];
 
 function parseEnvList(env) {
   if (!env) {
